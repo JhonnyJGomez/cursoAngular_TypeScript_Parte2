@@ -1,0 +1,44 @@
+<!-- <p>titulos works!</p>
+<h1>Hola soy {{nombre}}</h1>
+<h2>Mi apellido es {{apellido}}</h2>
+
+<h4>interpolacion: puedo pasar al HTML de ts, variables u objetos.propiedades usando corchetes: {{alumno.apellido}}</h4>
+ -->
+<!-- Propierty binding Asinga el valor de una variable a una propiedad de HTML  -->
+<!-- <img [src]="imagen">
+<input type="text" [value]="nombre">
+<div></div>
+ -->
+
+<!--two way binding  se puede asignar un valor a una variable y mostrar o editar el valor en pantalla.
+se requiere [(ngModel)] para acceder a la variable que TS -->
+<!-- <input type="text" [(ngModel)]="inputNuevo">
+<p>{{inputNuevo}}</p> -->
+
+<label> Correo
+    <input type="email" [(ngModel)] = "correo">
+</label>
+ 
+<!-- ngModelChange: es un evento de Angular que se activa cada vez que hay un cammbio, requiere que este el [(ngModel)] para aceder a la variable -->
+<label> Contraseña
+    <input type="password" (ngModelChange)="cadaCambio()" [(ngModel)] = "clave">
+</label>
+
+<button (click)="ingresar()">ingresar</button>  
+<!-- <button (dblclick)="llamarAlert()">2 clic</button> --> 
+<br><br>
+<!-- evento input, se ejucuta cada vez que se edita el input -->
+<!-- <input type="text" (input)="escribir($event.target.value)"> -->
+<br><br>
+<!-- evento focus -->
+<!-- <input type="text" (focus)="colorearFondo($event)"> -->
+
+<!-- Key Down -->
+<input type="text" (keydown)="keyDown($event)">
+
+
+<!-- Mouse Over - Mouse leave -->
+
+<img src="data:image/png;base64,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"
+ (mouseenter)="cambiarTamano($event)" (mouseleave)="reducirTamano($event)">
+

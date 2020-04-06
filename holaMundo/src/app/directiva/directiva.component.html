@@ -1,0 +1,6 @@
+<div *ngIf="!cargando">
+    <p>Termino de Cargar</p>
+</div>
+
+<img *ngIf="cargando" src="https://codemyui.com/wp-content/uploads/2017/07/fidget-spinner-loading.gif">
+<button (click)=alternar()>Alternar</button>
