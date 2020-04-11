@@ -20,3 +20,17 @@
     margin: auto;
 
 }
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: green;
+}
+
+.estaVencido{
+    color: red;
+}
+
+.textoGrande{
+    font-size: 20px;
+}

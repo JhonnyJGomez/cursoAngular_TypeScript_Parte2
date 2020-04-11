@@ -19,7 +19,7 @@
 
 <!--* Directiva: ngSwitch*  -->
 
-<div class="tab" [ngSwitch]="pestana">
+<!-- <div class="tab" [ngSwitch]="pestana">
     <button (click)="cambiarPestana('Perfil')">Perfil</button>
     <button (click)="cambiarPestana('Puntos')">Puntos</button>
     <button (click)="cambiarPestana('Info')">info</button>
@@ -30,4 +30,28 @@
         <p *ngSwitchCase="'Info'">Estoa es la info</p>
         <p *ngSwitchCase="''">Seleccione una pestaña</p>
     </div>
-</div>
+</div> -->
+
+<!-- * Directiva: ngClass * 
+    agrega clases css a elementos HTML, validando una expression -->
+
+   <h2>Ejem 1</h2>
+    <div [ngClass]="{'cuadrado':1+1==2}">
+        <p>Este deberia aparecer con fondo verde si 1+1 es = 2</p>
+    </div>
+
+    <h2>Ejem 2</h2>
+    <button (click)="alternarCuadrado()" >Alternar Cuadrado</button>
+    <div [ngClass]="{'cuadrado':mostrarCuadrado}">
+        <p>mostrarCuadrado = true? --> {{mostrarCuadrado}}</p>
+    </div>
+    <h2>Ejem 3</h2>
+
+    <div *ngFor ="let producto of productos" class ="producto">
+        <p>Producto: {{producto.nombre}}</p>
+        <p>stock: {{producto.stock}}</p>
+        <p>fabricante: {{producto.fabricante}}</p>
+        <p [ngClass]="{'estaVencido': producto.fechaVence <= myDate, 'textoGrande': producto.fechaVence <= myDate}"> Vencimiento: {{producto.fechaVence}} </p>
+    </div>
+
+

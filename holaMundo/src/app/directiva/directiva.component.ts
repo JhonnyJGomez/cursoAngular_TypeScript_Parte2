@@ -15,6 +15,9 @@ interface producto{
 export class DirectivaComponent implements OnInit {
   cargando:boolean= true
   pestana:string = ''
+  mostrarCuadrado:boolean = false
+  myDate = new Date();
+
   productos: Array<producto> = [{
     nombre: 'Gaseosa',
     stock: 15,
@@ -31,7 +34,7 @@ export class DirectivaComponent implements OnInit {
      nombre: 'salchicha',
      stock: 215,
      fabricante: 'Rancheras',
-     fechaVence: new Date('08/24/2020')
+     fechaVence: new Date('08/24/2018')
    }]
 
 
@@ -53,6 +56,10 @@ export class DirectivaComponent implements OnInit {
 
   cambiarPestana(pestana:string){
     this.pestana = pestana
+  }
+
+  alternarCuadrado(){
+    this.mostrarCuadrado = !this.mostrarCuadrado
   }
 }
 
