@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "holaMundo": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "holaMundo"
+    }
+  },
+  "defaultProject": "holaMundo",
+  "cli": {
+    "analytics": "240ab402-6786-4d62-b663-ceb774483ab1"
+  }
 }

@@ -10,9 +10,24 @@
 
 <!--* Directiva: nfFor*  -->
 
-<div *ngFor ="let producto of productos" class ="producto">
+<!-- <div *ngFor ="let producto of productos" class ="producto">
 <p>Producto: {{producto.nombre}}</p>
 <p>stock: {{producto.stock}}</p>
 <p>fabricante: {{producto.fabricante}}</p>
 <p>Vencimiento: {{producto.fechaVence}}</p>
+</div> -->
+
+<!--* Directiva: ngSwitch*  -->
+
+<div class="tab" [ngSwitch]="pestana">
+    <button (click)="cambiarPestana('Perfil')">Perfil</button>
+    <button (click)="cambiarPestana('Puntos')">Puntos</button>
+    <button (click)="cambiarPestana('Info')">info</button>
+
+    <div class="tabContenido">
+        <p *ngSwitchCase="'Perfil'">Este es el perfil</p>
+        <p *ngSwitchCase="'Puntos'">Estos son los puntos</p>
+        <p *ngSwitchCase="'Info'">Estoa es la info</p>
+        <p *ngSwitchCase="''">Seleccione una pestaña</p>
+    </div>
 </div>

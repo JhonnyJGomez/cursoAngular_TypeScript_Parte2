@@ -4,3 +4,19 @@
     padding: 15px;
 
 }
+
+.tab{
+    border: 2px solid greenyellow;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+
+}
+
+.tabContenido{
+    width: 90%;
+    height: 90%;
+    background: lightblue;
+    margin: auto;
+
+}

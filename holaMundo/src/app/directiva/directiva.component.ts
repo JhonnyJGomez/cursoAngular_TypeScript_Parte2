@@ -14,7 +14,7 @@ interface producto{
 })
 export class DirectivaComponent implements OnInit {
   cargando:boolean= true
-  
+  pestana:string = ''
   productos: Array<producto> = [{
     nombre: 'Gaseosa',
     stock: 15,
@@ -49,6 +49,10 @@ export class DirectivaComponent implements OnInit {
 
   alternar(){
     this.cargando = !this.cargando
+  }
+
+  cambiarPestana(pestana:string){
+    this.pestana = pestana
   }
 }
 
