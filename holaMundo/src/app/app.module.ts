@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { TitulosComponent } from './titulos/titulos.component';
 import { FormsModule} from '@angular/forms';
 import { DirectivaComponent } from './directiva/directiva.component';
+import { EjemploComponent } from './ejemplo/ejemplo.component';
 
 @NgModule({
   declarations: [ //Compoenentes
     AppComponent,
     TitulosComponent,
-    DirectivaComponent
+    DirectivaComponent,
+    EjemploComponent
   ],
   imports: [ //Plugins 
     BrowserModule,
