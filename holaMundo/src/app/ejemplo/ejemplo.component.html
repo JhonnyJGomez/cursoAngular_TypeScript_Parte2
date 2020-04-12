@@ -8,14 +8,20 @@
             <label for="apellido">Apellido</label>
             <input type="text" name="apellido" class="form-control" [(ngModel)]=alumno.apellido>
         </div>
+        <div class="form-group">
+            <label for="excelente">es Excelente?</label>
+            <select  name="excelente" [(ngModel)]="alumno.excelente">
+              <option value="false">NO</option>
+              <option value="true">SI</option>
+            </select>
+        </div>
         <button type="submit" class="btn btn-primary" (click)="agregar()">Agregar</button>
 
     </form>
 
     <div class="card" *ngFor = "let alumnoDesdeLista of listaAlumnos">
         <div class="card-body">
-          {{alumnoDesdeLista.nombre}} {{alumnoDesdeLista.apellido}}
+          <span [ngClass]="{'excelente':alumnoDesdeLista.excelente == 'true'}">Alumno:</span> {{alumnoDesdeLista.nombre}} {{alumnoDesdeLista.apellido}} {{alumnoDesdeLista.excelente}}
         </div>
     </div>
-
 </div>

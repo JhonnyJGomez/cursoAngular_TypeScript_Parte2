@@ -4,10 +4,12 @@ import { Component, OnInit } from '@angular/core';
 class Alumno{
   nombre: string
   apellido: string
+  excelente: Boolean
 
   constructor(){
     this.nombre = this.nombre
     this.apellido = this.apellido
+    this.excelente = this.excelente 
   }
 }
 
@@ -29,12 +31,12 @@ export class EjemploComponent implements OnInit {
   agregar(){
     this.listaAlumnos.push({
       nombre: this.alumno.nombre,
-      apellido: this.alumno.apellido
+      apellido: this.alumno.apellido,
+      excelente: this.alumno.excelente
     }) 
     console.log(this.listaAlumnos)
     this.alumno.nombre = ''
     this.alumno.apellido = ''
   }
-  
 
 }
