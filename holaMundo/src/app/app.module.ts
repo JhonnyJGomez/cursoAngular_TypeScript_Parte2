@@ -8,6 +8,8 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { EjemploComponent } from './ejemplo/ejemplo.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ContinuaraPipe } from './continuara.pipe';
+import { AppRoutingModule } from './app-routing.module';
+import { Pagina404Component } from './pagina404/pagina404.component';
 
 @NgModule({
   declarations: [ //Compoenentes
@@ -16,13 +18,19 @@ import { ContinuaraPipe } from './continuara.pipe';
     DirectivaComponent,
     EjemploComponent,
     PipesComponent,
-    ContinuaraPipe
+    ContinuaraPipe,
+    Pagina404Component
   ],
   imports: [ //Plugins 
     BrowserModule,
+    AppRoutingModule,
     FormsModule
   ],
   providers: [],  //Servicio
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
+
+
