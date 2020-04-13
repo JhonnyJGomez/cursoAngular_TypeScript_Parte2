@@ -7,6 +7,7 @@ import { FormsModule} from '@angular/forms';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { EjemploComponent } from './ejemplo/ejemplo.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ContinuaraPipe } from './continuara.pipe';
 
 @NgModule({
   declarations: [ //Compoenentes
@@ -14,7 +15,8 @@ import { PipesComponent } from './pipes/pipes.component';
     TitulosComponent,
     DirectivaComponent,
     EjemploComponent,
-    PipesComponent
+    PipesComponent,
+    ContinuaraPipe
   ],
   imports: [ //Plugins 
     BrowserModule,
