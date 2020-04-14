@@ -10,6 +10,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ContinuaraPipe } from './continuara.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { Pagina404Component } from './pagina404/pagina404.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
 
 @NgModule({
   declarations: [ //Compoenentes
@@ -19,7 +20,8 @@ import { Pagina404Component } from './pagina404/pagina404.component';
     EjemploComponent,
     PipesComponent,
     ContinuaraPipe,
-    Pagina404Component
+    Pagina404Component,
+    EncabezadoComponent
   ],
   imports: [ //Plugins 
     BrowserModule,

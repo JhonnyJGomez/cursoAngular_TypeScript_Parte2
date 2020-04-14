@@ -8,7 +8,7 @@ import { Pagina404Component } from './pagina404/pagina404.component';
 
 const routes: Routes = [
     {
-        path:'' , component: TitulosComponent
+        path:'titulos' , component: TitulosComponent
     },
     {
         path:'pipes' , component: PipesComponent
