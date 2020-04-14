@@ -11,6 +11,9 @@ import { ContinuaraPipe } from './continuara.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { EditarUsuariosComponent } from './usuarios/editar-usuarios/editar-usuarios.component';
+import { AgregarUsuariosComponent } from './usuarios/agregar-usuarios/agregar-usuarios.component';
 
 @NgModule({
   declarations: [ //Compoenentes
@@ -21,7 +24,10 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
     PipesComponent,
     ContinuaraPipe,
     Pagina404Component,
-    EncabezadoComponent
+    EncabezadoComponent,
+    UsuariosComponent,
+    EditarUsuariosComponent,
+    AgregarUsuariosComponent
   ],
   imports: [ //Plugins 
     BrowserModule,
