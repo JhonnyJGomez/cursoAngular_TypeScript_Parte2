@@ -20,7 +20,7 @@ const routes: Routes = [
             {   path:'usuarios/agregar' , component: AgregarUsuariosComponent   },
             {   path:'usuarios/editar', component: EditarUsuariosComponent  }]  },
     {   path:'articulo', component: ArticuloComponent  },
-    {   path:'articuloDetalle/:nombre/:precio', component: ArticuloDetalleComponent  },
+    {   path:'articuloDetalle', component: ArticuloDetalleComponent  },
     {   path:'**' , component: Pagina404Component   }
 
 ]

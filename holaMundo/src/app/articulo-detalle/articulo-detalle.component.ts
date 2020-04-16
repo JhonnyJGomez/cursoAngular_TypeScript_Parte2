@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Articulo } from '../models/articulo';
 
 
 @Component({
@@ -8,16 +9,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./articulo-detalle.component.css']
 })
 export class ArticuloDetalleComponent implements OnInit {
-  nombre:string
-  precio:number
+  articulo:Articulo
   
-  constructor(private ruta: ActivatedRoute) { }
+  constructor(private rutaActiva: ActivatedRoute) { }
 
   ngOnInit(): void {
-
-    this.nombre = this.ruta.snapshot.params.nombre
-    this.precio = this.ruta.snapshot.params.precio
-
+ 
+    this.articulo = JSON.parse(this.rutaActiva.snapshot.params.articulo)
   }
 
 }
