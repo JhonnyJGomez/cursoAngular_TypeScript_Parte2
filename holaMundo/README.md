@@ -1,6 +1,5 @@
 # Curso Angular 2da Parte
-
-En esta 2 parte encontramos: 
+## En esta 2 parte encontramos: 
 
 * Angular CLI
 * Angular Componentes
