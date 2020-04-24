@@ -1,5 +1,14 @@
 # Curso Angular 2da Parte
 
+En esta 2 parte encontramos: 
+
+* Angular CLI
+* Angular Componentes
+* Angular Eventos HTML
+* Angular Directivas
+* Angular Pipes
+* Angular Routing
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server
